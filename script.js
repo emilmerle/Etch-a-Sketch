@@ -29,7 +29,10 @@ function resetGrid() {
         gridContainer.removeChild(gridContainer.lastChild);
     }
     //lets the user set a new size
-    let size = prompt("Choose new size of grid:");
+    let size = prompt("Choose new number of quares per side:");
+    if((isNaN(size)) || size < 1 || size >100){
+        size = prompt("Please enter a number between 1 and 100:");
+    }
     createGrid(size);
     addListeners();
 }
