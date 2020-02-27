@@ -31,7 +31,22 @@ function resetGrid() {
     //lets the user set a new size
     let size = prompt("Choose new size of grid:");
     createGrid(size);
+    addListeners();
+}
+
+function hovering(e) {
+    e.style.backgroundColor = "blue";
+    console.log(e);
 }
 
 let button = document.querySelector(".resetButton");
 button.addEventListener("click", resetGrid);
+
+function addListeners() {
+    let gridItems = document.querySelectorAll(".gridItem");
+    gridItems.forEach(element => {
+        element.addEventListener("mouseover", e => {
+            hovering(e.target);    
+        });
+    });
+}

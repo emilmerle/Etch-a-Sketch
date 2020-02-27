@@ -12,3 +12,7 @@
 .gridItem {
     border: 1px solid red;
 }
+
+.gridItem:hover {
+    background-color: black;
+}
