@@ -1,0 +1,14 @@
+.main {
+    text-align: center;
+}
+
+.gridContainer {
+    margin: 20px;
+    display: inline-grid;
+    width: 800px;
+    height: 800px;
+}
+
+.gridItem {
+    border: 1px solid red;
+}
