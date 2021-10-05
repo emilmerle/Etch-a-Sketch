@@ -1,4 +1,6 @@
-createGrid(10);
+document.addEventListener("DOMContentLoaded", function(event) {
+    resetGrid();
+});
 
 function createGrid(size) {
     let gridContainer = document.querySelector(".gridContainer");
@@ -29,7 +31,7 @@ function resetGrid() {
         gridContainer.removeChild(gridContainer.lastChild);
     }
     //lets the user set a new size
-    let size = prompt("Choose new number of quares per side:");
+    let size = prompt("Choose new number of squares per side:");
     while((isNaN(size)) || size < 1 || size >100){
         size = prompt("Please enter a number between 1 and 100:");
     }
