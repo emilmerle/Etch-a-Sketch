@@ -33,3 +33,11 @@
     margin: 20px;
     border-radius: 0;
 }
+
+.stats {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: white;
+    z-index: 10;
+}
